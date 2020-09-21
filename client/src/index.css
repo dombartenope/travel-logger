@@ -28,6 +28,17 @@ body {
 	padding: 0.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+	.popup {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50vw;
+		padding: 0.5rem;
+	}
+  }
+
 .image {
 	max-width: 200px;
 	object-fit: cover;
