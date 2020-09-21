@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "name": "travel-log-server",
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "src/index.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "1337",
+    "MONGO_URI": "@mongo_uri",
+    "CORS_ORIGIN": "https://travel-log-beta.vercel.app"
+  }
+}
